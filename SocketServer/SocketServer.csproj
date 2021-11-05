@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net5.0</TargetFramework>
+		<StartupObject>SocketServer.Server</StartupObject>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <DefineConstants />
+	  <PlatformTarget>x64</PlatformTarget>
+	  <DocumentationFile></DocumentationFile>
+	  <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+	  <DebugType>none</DebugType>
+	  <DebugSymbols>false</DebugSymbols>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CsvHelper" Version="27.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="5.0.11" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Common\Common.csproj" />
+	  <ProjectReference Include="..\MyNETCoreLib\MyNETCoreLib.csproj" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="GUIClient.AboutWindow" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="13.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAIAACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AboutWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.12" />
+  </Class>
+  <Class Name="GUIClient.App" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUIClient.BlankPage" BaseTypeListCollapsed="true">
+    <Position X="5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BlankPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GUIClient.ChatPage" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="10.75" Width="2" />
+    <AssociationLine Name="session" Type="GUIClient.Session" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.938" Y="10.75" />
+        <Point X="1.938" Y="10.375" />
+        <Point X="6.75" Y="10.375" />
+        <Point X="6.75" Y="9.939" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABIEAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>ChatPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="session" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GUIClient.CustomCommands">
+    <Position X="3.75" Y="13.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAEAAEAAAAIAAAAAAAAAIAAQAAAAAAA=</HashCode>
+      <FileName>CustomCommands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUIClient.LoginPage" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="10.75" Width="2.25" />
+    <AssociationLine Name="session" Type="GUIClient.Session" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.375" Y="10.75" />
+        <Point X="7.375" Y="10.375" />
+        <Point X="6.75" Y="10.375" />
+        <Point X="6.75" Y="9.939" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>LoginPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="session" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GUIClient.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>BQAABiAEAABAgQSAABAAAAGIAAAABAAEABAIQAAAIQA=</HashCode>
+      <FileName>MainWindow.EventHandlers.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="blankPage" />
+      <Property Name="Session" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.19" />
+  </Class>
+  <Class Name="GUIClient.NewAccountPage" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="10.75" Width="2.25" />
+    <AssociationLine Name="session" Type="GUIClient.Session" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="10.75" />
+        <Point X="4.5" Y="10.375" />
+        <Point X="6.75" Y="10.375" />
+        <Point X="6.75" Y="9.939" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>NewAccountPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="session" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GUIClient.Session" BaseTypeListCollapsed="true">
+    <Position X="5" Y="3.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>ABJAAAAAAKAAQEBKIhAAAhAAgAAACAAAAAAQEASAABA=</HashCode>
+      <FileName>Session.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

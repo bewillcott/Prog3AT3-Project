@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="MyNETCoreLib.AvlTree&lt;T&gt;">
+    <Position X="1.25" Y="1" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="MyNETCoreLib.AvlTree&lt;T&gt;.Node&lt;E&gt;">
+        <TypeIdentifier>
+          <NewMemberFileName>AvlTree.Node.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gsIAUGAAmJQEADKBCAAAhSRUYAUIAAAUCYRAAABQIQI=</HashCode>
+      <FileName>AvlTree.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyNETCoreLib.ObservableAvlTree&lt;T&gt;">
+    <Position X="5.5" Y="1" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAgAAAAAEAABAAAAAAAABAAAA=</HashCode>
+      <FileName>ObservableAvlTree.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyNETCoreLib.AvlTree&lt;T&gt;">
+    <Position X="6.25" Y="4" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="MyNETCoreLib.AvlTree&lt;T&gt;.DataEnum&lt;E&gt;">
+        <TypeIdentifier>
+          <NewMemberFileName>AvlTree.DataEnum.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AvlTree.DataEnum.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyNETCoreLib.ReindexFailedException">
+    <Position X="6" Y="9.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ReindexFailedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Exception">
+    <Position X="5.5" Y="11.5" Width="4.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

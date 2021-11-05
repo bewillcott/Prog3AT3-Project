@@ -1,0 +1,94 @@
+﻿<!--
+/*
+ *  File Name:   MainWindow.xaml
+ *
+ *  Project:     GUI_Client
+ *
+ *  Copyright (c) 2021 Bradley Willcott
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses />.
+ *
+ * ****************************************************************
+ * Name: Bradley Willcott
+ * ID:   M198449
+ * Date: 27/10/2021
+ * ****************************************************************
+ */
+-->
+
+<Window x:Class="GUIClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cmds="clr-namespace:GUIClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="400"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"  WindowStyle="ThreeDBorderWindow"
+        Closing="Window_Closing" Background="Cornsilk">
+
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static cmds:CustomCommands.About}" CanExecute="AboutCommand_CanExecute" Executed="AboutCommand_Executed" />
+        <CommandBinding Command="{x:Static cmds:CustomCommands.Exit}" CanExecute="ExitCommand_CanExecute" Executed="ExitCommand_Executed" />
+        <CommandBinding Command="{x:Static cmds:CustomCommands.Login}" CanExecute="LoginCommand_CanExecute" Executed="LoginCommand_Executed" />
+        <CommandBinding Command="{x:Static cmds:CustomCommands.Logout}" CanExecute="LogoutCommand_CanExecute" Executed="LogoutCommand_Executed" />
+        <CommandBinding Command="{x:Static cmds:CustomCommands.NewAccount}" CanExecute="NewAccountCommand_CanExecute" Executed="NewAccountCommand_Executed" />
+    </Window.CommandBindings>
+
+    <Window.Resources>
+        <Style TargetType="Menu">
+            <Setter Property="Background" Value="BurlyWood" />
+        </Style>
+        <Style TargetType="{x:Type MenuItem}">
+            <Setter Property="Background" Value="BurlyWood" />
+            <Setter Property="ClipToBounds" Value="True" />
+            <Setter Property="Height" Value="25" />
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect />
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <DockPanel>
+        <Line DockPanel.Dock="Top" Stroke="Black" StrokeThickness="1" X1="0" X2="400" />
+        <Menu DockPanel.Dock="Top" Height="25" VerticalContentAlignment="Stretch">
+            <MenuItem Header="_File">
+                <MenuItem Command="{x:Static cmds:CustomCommands.Exit}" />
+            </MenuItem>
+
+            <MenuItem Header="_User">
+                <MenuItem Command="{x:Static cmds:CustomCommands.NewAccount}" />
+            </MenuItem>
+
+            <MenuItem Header="_Chat">
+                <MenuItem Command="{x:Static cmds:CustomCommands.Login}" />
+                <MenuItem Command="{x:Static cmds:CustomCommands.Logout}" />
+            </MenuItem>
+
+            <MenuItem Header="_Help">
+                <MenuItem Header="_Log Console" IsCheckable="True"
+                          Checked="LogMenuItem_Checked" Unchecked="LogMenuItem_Unchecked" />
+                <MenuItem Command="{x:Static cmds:CustomCommands.About}" />
+            </MenuItem>
+        </Menu>
+        <Line DockPanel.Dock="Top" Stroke="Black" StrokeThickness="1" X1="0" X2="400" />
+        <Grid DockPanel.Dock="Bottom" Background="LightGray" Height="Auto">
+            <TextBlock x:Name="statusTextBlock" Text="Status" Margin="5" />
+        </Grid>
+        <Line DockPanel.Dock="Bottom" Stroke="Black" StrokeThickness="1" X1="0" X2="400" />
+        <Frame x:Name="CentreFrame" NavigationUIVisibility="Hidden" />
+    </DockPanel>
+</Window>

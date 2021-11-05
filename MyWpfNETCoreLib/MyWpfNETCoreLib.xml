@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<!--
+/*
+ *  File Name:   MyWpfNETCoreLib.xml
+ *
+ *  Project:     MyWpfNETCoreLib
+ *
+ *  Copyright (c) 2021 Bradley Willcott
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses />.
+ *
+ * ****************************************************************
+ * Name: Bradley Willcott
+ * ID:   M198449
+ * Date: 1/11/2021
+ * ****************************************************************
+ */
+-->
+
+<doc>
+    <assembly>
+        <name>MyWpfNETCoreLib</name>
+    </assembly>
+    <members>
+        <member name="T:MyWpfNETCoreLib.LogConsole">
+            <summary>
+            Interaction logic for LogConsole.xaml.
+            </summary>
+            <remarks>
+            Original code copied from:
+            https://stackoverflow.com/questions/41277425/how-to-make-simple-read-only-output-log-console-for-wpf
+            </remarks>
+            <summary>
+            LogConsole
+            </summary>
+        </member>
+        <member name="F:MyWpfNETCoreLib.LogConsole.outputter">
+            <summary>
+            The outputter
+            </summary>
+        </member>
+        <member name="M:MyWpfNETCoreLib.LogConsole.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MyWpfNETCoreLib.LogConsole" /> class.
+            </summary>
+        </member>
+        <member name="M:MyWpfNETCoreLib.LogConsole.Write(System.String)">
+            <summary>
+            Writes the specified text.
+            </summary>
+            <param name="text">The text.</param>
+        </member>
+        <member name="M:MyWpfNETCoreLib.LogConsole.WriteLine(System.String)">
+            <summary>
+            Writes the specified text line.
+            </summary>
+            <param name="text">The text.</param>
+        </member>
+        <member name="M:MyWpfNETCoreLib.LogConsole.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MyWpfNETCoreLib.TextBlockOutputter">
+             <summary>
+             Defines the <see cref="T:MyWpfNETCoreLib.TextBlockOutputter" />.
+             </summary>
+             <remarks>
+             The original code was copied from:
+             https://social.technet.microsoft.com/wiki/contents/articles/12347.wpf-howto-add-a-debugoutput-console-to-your-application.aspx
+             <code>
+             // MainWindow.xaml
+            <Window
+                    xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation Jump "
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml Jump "
+                    x:Class="WpfApplication68.MainWindow"
+                    Title="MainWindow" Height="350" Width="525"
+                    xmlns:local="clr-namespace:WpfApplication68">
+
+                <Grid>
+                    <TextBox Height = "200" Width="400" x:Name="TestBox" />
+                </Grid>
+            </Window>
+
+             // MainWindow.xaml.cs
+
+            using System;
+            using System.Windows;
+            using System.Threading;
+
+            namespace WpfApplication68
+            {
+                public partial class MainWindow : Window
+                {
+                    TextBoxOutputter outputter;
+
+                    public MainWindow()
+                    {
+                        InitializeComponent();
+
+                        outputter = new TextBoxOutputter(TestBox);
+                        Console.SetOut(outputter);
+                        Console.WriteLine("Started");
+
+                        var timer1 = new Timer(TimerTick, "Timer1", 0, 1000);
+                        var timer2 = new Timer(TimerTick, "Timer2", 0, 500);
+                    }
+
+                    void TimerTick(object state)
+                    {
+                        var who = state as string;
+                        Console.WriteLine(who);
+                    }
+
+                }
+            }
+             </code>
+             </remarks>
+        </member>
+        <member name="F:MyWpfNETCoreLib.TextBlockOutputter.textBlock">
+            <summary>
+            Defines the textBox.
+            </summary>
+        </member>
+        <member name="F:MyWpfNETCoreLib.TextBlockOutputter.counter">
+            <summary>
+            The counter
+            </summary>
+        </member>
+        <member name="M:MyWpfNETCoreLib.TextBlockOutputter.#ctor(System.Windows.Controls.TextBlock)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MyWpfNETCoreLib.TextBlockOutputter" /> class.
+            </summary>
+            <param name="output">The output<see cref="T:System.Windows.Controls.TextBox" />.</param>
+        </member>
+        <member name="P:MyWpfNETCoreLib.TextBlockOutputter.Encoding">
+            <summary>
+            Gets the Encoding.
+            </summary>
+        </member>
+        <member name="M:MyWpfNETCoreLib.TextBlockOutputter.WriteLine(System.String)">
+            <summary>
+            Writes a string to the text stream. If the given string is null, nothing
+            is written to the text stream.
+            </summary>
+            <param name="value">The string to write.</param>
+        </member>
+        <member name="M:MyWpfNETCoreLib.TextBlockOutputter.Write(System.Char)">
+            <summary>
+            Writes a character to the text stream.
+            </summary>
+            <param name="value">The character to write to the text stream.</param>
+        </member>
+    </members>
+</doc>

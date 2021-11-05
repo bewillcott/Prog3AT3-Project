@@ -1,0 +1,41 @@
+﻿<!--
+/*
+ *  File Name:   BlankPage.xaml
+ *
+ *  Project:     GUI_Client
+ *
+ *  Copyright (c) 2021 Bradley Willcott
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses />.
+ *
+ * ****************************************************************
+ * Name: Bradley Willcott
+ * ID:   M198449
+ * Date: 27/10/2021
+ * ****************************************************************
+ */
+-->
+
+<Page x:Class="GUIClient.BlankPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:GUIClient"
+      mc:Ignorable="d"
+      d:DesignHeight="400" d:DesignWidth="400"
+      Title="BlankPage">
+
+    <Grid></Grid>
+</Page>

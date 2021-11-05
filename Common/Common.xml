@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<!--
+/*
+ *  File Name:   Common.xml
+ *
+ *  Project:     Common
+ *
+ *  Copyright (c) 2021 Bradley Willcott
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses />.
+ *
+ * ****************************************************************
+ * Name: Bradley Willcott
+ * ID:   M198449
+ * Date: 1/11/2021
+ * ****************************************************************
+ */
+-->
+
+<doc>
+    <assembly>
+        <name>Common</name>
+    </assembly>
+    <members>
+        <member name="T:Common.Constants">
+            <summary>
+            Constants is a utility class containing only common constants.
+            </summary>
+        </member>
+        <member name="F:Common.Constants.BuildDate">
+            <summary>
+            The build date of the project.
+            </summary>
+        </member>
+        <member name="F:Common.Constants.ProductTitle">
+            <summary>
+            The Project title.
+            </summary>
+        </member>
+        <member name="F:Common.Constants.ServerName">
+            <summary>
+            Defines the ServerName.
+            </summary>
+        </member>
+        <member name="F:Common.Constants.ServerPort">
+            <summary>
+            SocketServer port number.
+            </summary>
+        </member>
+        <member name="F:Common.Constants.Version">
+            <summary>
+            The Project version number.
+            </summary>
+        </member>
+        <member name="F:Common.Constants.doubleLine">
+            <summary>
+            Holds the double line.
+            </summary>
+        </member>
+        <member name="F:Common.Constants.line">
+            <summary>
+            Holds the single line.
+            </summary>
+        </member>
+        <member name="F:Common.Constants.titleIndent">
+            <summary>
+            Holds the title indent.
+            </summary>
+        </member>
+        <member name="P:Common.Constants.DoubleLine">
+            <summary>
+            Gets the double line.
+            </summary>
+        </member>
+        <member name="P:Common.Constants.Line">
+            <summary>
+            Gets the single line.
+            </summary>
+        </member>
+        <member name="P:Common.Constants.TitleIndent">
+            <summary>
+            Gets the title indent.
+            </summary>
+        </member>
+        <member name="M:Common.Constants.Log(System.String,System.Object[])">
+            <summary>
+            Log messages to the standard console.
+            </summary>
+            <param name="message">The message <see cref="T:System.String" />.</param>
+            <param name="args">   The args <see cref="!:object[]" />.</param>
+        </member>
+        <member name="T:Common.SessionConstants">
+            <summary>
+            Defines the <see cref="T:Common.SessionConstants" />.
+            </summary>
+        </member>
+        <member name="F:Common.SessionConstants.BadRequest">
+            <summary>
+            Sent to Client when Client's request was corrupted or not correctly formatted.
+            </summary>
+        </member>
+        <member name="F:Common.SessionConstants.ChatClose">
+            <summary>
+            Defines the ChatClose.
+            </summary>
+        </member>
+        <member name="F:Common.SessionConstants.ChatDenied">
+            <summary>
+            Defines the ChatDenied.
+            </summary>
+        </member>
+        <member name="F:Common.SessionConstants.ChatOK">
+            <summary>
+            Defines the ChatOK.
+            </summary>
+        </member>
+        <member name="F:Common.SessionConstants.ChatRequest">
+            <summary>
+            Defines the ChatRequest.
+            </summary>
+        </member>
+        <member name="F:Common.SessionConstants.InvalidRequest">
+            <summary>
+            Sent to Client when Client has made a request out of sequence.
+            </summary>
+        </member>
+        <member name="F:Common.SessionConstants.LoginFailed">
+            <summary>
+            Defines the LoginFailed.
+            </summary>
+        </member>
+        <member name="F:Common.SessionConstants.LoginOK">
+            <summary>
+            Defines the LoginOK.
+            </summary>
+        </member>
+        <member name="F:Common.SessionConstants.LoginRequest">
+            <summary>
+            Defines the LoginRequest.
+            </summary>
+        </member>
+        <member name="F:Common.SessionConstants.LogOut">
+            <summary>
+            Defines the LogOut.
+            </summary>
+        </member>
+        <member name="F:Common.SessionConstants.NewUserFailed">
+            <summary>
+            Defines the NewUserFailed.
+            </summary>
+        </member>
+        <member name="F:Common.SessionConstants.NewUserOK">
+            <summary>
+            Defines the NewUserOK.
+            </summary>
+        </member>
+        <member name="F:Common.SessionConstants.NewUserRequest">
+            <summary>
+            Defines the NewUserRequest.
+            </summary>
+        </member>
+        <member name="F:Common.SessionConstants.Password">
+            <summary>
+            Defines the Password.
+            </summary>
+        </member>
+        <member name="F:Common.SessionConstants.UserName">
+            <summary>
+            Defines the UserName.
+            </summary>
+        </member>
+    </members>
+</doc>
