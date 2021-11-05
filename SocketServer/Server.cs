@@ -37,14 +37,14 @@ namespace SocketServer
     using static Common.SessionConstants;
 
     /// <summary>
-    /// Defines the <see cref="Server" />.
+    /// Defines the <see cref="Server"/>.
     /// </summary>
     public static class Server
     {
         /// <summary>
         /// The Main.
         /// </summary>
-        /// <param name="args">The args<see cref="string[]"/>.</param>
+        /// <param name="args">The args <see cref="string[]"/>.</param>
         private static void Main(string[] args)
         {
             IPAddress ipAddress = Dns.GetHostEntry(ServerName).AddressList[0];
@@ -60,16 +60,14 @@ namespace SocketServer
                 serverSocket.Start();
 
                 Log($"\n{DoubleLine}");
-                Log($"{TitleIndent}Java3 AT2 Four - Socket Server ({Common.Constants.Version})");
+                Log($"{TitleIndent}{ProductTitle} - Socket Server ({Common.Constants.Version})");
                 Log($"{DoubleLine}\n");
                 Log($"Server is listening on port {((IPEndPoint)serverSocket.Server.LocalEndPoint).Port.ToString()}");
                 Log($"{Line}\n");
 
                 bool keepServerAlive = true;
 
-                // -----------------
-                // Connection Loop
-                // -----------------
+                // ----------------- Connection Loop -----------------
                 while (keepServerAlive)
                 {
                     // wait, listen and accept connection
@@ -92,9 +90,7 @@ namespace SocketServer
                             {
                                 outStream.AutoFlush = true;
 
-                                // --------------
-                                // Session Loop
-                                // --------------
+                                // -------------- Session Loop --------------
                                 do
                                 {
                                     // Get Client request string
@@ -224,9 +220,7 @@ namespace SocketServer
                                     // Chat Session?
                                     if (sessionState.ChatOpen)
                                     {
-                                        // -------------------
-                                        // Chat Session Loop
-                                        // -------------------
+                                        // ------------------- Chat Session Loop -------------------
                                         while (sessionState.ChatOpen)
                                         {
                                             String inLine = inStream.ReadLine(); // read a line from client
